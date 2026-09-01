@@ -23,3 +23,6 @@ C:\Users\User\Documents\GitHub\SwBiblioteca\SwBiblioteca\SwBiblioteca\obj\Debug\
 C:\Users\User\Documents\GitHub\SwBiblioteca\SwBiblioteca\SwBiblioteca\obj\Debug\net10.0-windows\SwBiblioteca.FrmPrestamos.resources
 C:\Users\User\Documents\GitHub\SwBiblioteca\SwBiblioteca\SwBiblioteca\obj\Debug\net10.0-windows\SwBiblioteca.FrmReportes.resources
 C:\Users\User\Documents\GitHub\SwBiblioteca\SwBiblioteca\SwBiblioteca\obj\Debug\net10.0-windows\SwBiblioteca.FrmUsuarios.resources
+C:\Users\User\Documents\GitHub\SwBiblioteca\SwBiblioteca\SwBiblioteca\bin\Debug\net10.0-windows\FontAwesome.Sharp.dll
+C:\Users\User\Documents\GitHub\SwBiblioteca\SwBiblioteca\SwBiblioteca\obj\Debug\net10.0-windows\SwBiblioteca.csproj.AssemblyReference.cache
+C:\Users\User\Documents\GitHub\SwBiblioteca\SwBiblioteca\SwBiblioteca\obj\Debug\net10.0-windows\SwBiblio.952492A6.Up2Date
