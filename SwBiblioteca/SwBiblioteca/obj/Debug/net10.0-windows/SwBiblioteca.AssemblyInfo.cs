@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SwBiblioteca")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2792ee81b50adcce2e8a7dff85ce63424f578368")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+288e08d4971d39e5c366b3426e802325b89e6b22")]
 [assembly: System.Reflection.AssemblyProductAttribute("SwBiblioteca")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SwBiblioteca")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

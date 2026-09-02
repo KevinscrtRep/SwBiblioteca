@@ -32,14 +32,14 @@
             lblTitulo = new Label();
             pnlBusqueda = new Panel();
             btnBuscar = new Button();
-            txtBuscar = new TextBox();
+            txtBuscarISBN = new TextBox();
             lblTitulo2 = new Label();
             pnlDatos = new Panel();
             txtExistencias = new TextBox();
             txtAnio = new TextBox();
             txtCategoria = new TextBox();
-            comboBox2 = new ComboBox();
-            comboBox1 = new ComboBox();
+            cmbEditorial = new ComboBox();
+            cmbAutor = new ComboBox();
             txtTitulo = new TextBox();
             txtISBN = new TextBox();
             lblExistencias = new Label();
@@ -89,7 +89,7 @@
             // 
             pnlBusqueda.BackColor = Color.WhiteSmoke;
             pnlBusqueda.Controls.Add(btnBuscar);
-            pnlBusqueda.Controls.Add(txtBuscar);
+            pnlBusqueda.Controls.Add(txtBuscarISBN);
             pnlBusqueda.Controls.Add(lblTitulo2);
             pnlBusqueda.Dock = DockStyle.Top;
             pnlBusqueda.Location = new Point(0, 60);
@@ -105,13 +105,14 @@
             btnBuscar.TabIndex = 2;
             btnBuscar.Text = "Buscar";
             btnBuscar.UseVisualStyleBackColor = true;
+            btnBuscar.Click += btnBuscar_Click;
             // 
-            // txtBuscar
+            // txtBuscarISBN
             // 
-            txtBuscar.Location = new Point(512, 14);
-            txtBuscar.Name = "txtBuscar";
-            txtBuscar.Size = new Size(206, 23);
-            txtBuscar.TabIndex = 1;
+            txtBuscarISBN.Location = new Point(512, 14);
+            txtBuscarISBN.Name = "txtBuscarISBN";
+            txtBuscarISBN.Size = new Size(206, 23);
+            txtBuscarISBN.TabIndex = 1;
             // 
             // lblTitulo2
             // 
@@ -127,8 +128,8 @@
             pnlDatos.Controls.Add(txtExistencias);
             pnlDatos.Controls.Add(txtAnio);
             pnlDatos.Controls.Add(txtCategoria);
-            pnlDatos.Controls.Add(comboBox2);
-            pnlDatos.Controls.Add(comboBox1);
+            pnlDatos.Controls.Add(cmbEditorial);
+            pnlDatos.Controls.Add(cmbAutor);
             pnlDatos.Controls.Add(txtTitulo);
             pnlDatos.Controls.Add(txtISBN);
             pnlDatos.Controls.Add(lblExistencias);
@@ -165,21 +166,21 @@
             txtCategoria.Size = new Size(307, 23);
             txtCategoria.TabIndex = 11;
             // 
-            // comboBox2
+            // cmbEditorial
             // 
-            comboBox2.FormattingEnabled = true;
-            comboBox2.Location = new Point(512, 114);
-            comboBox2.Name = "comboBox2";
-            comboBox2.Size = new Size(307, 23);
-            comboBox2.TabIndex = 10;
+            cmbEditorial.FormattingEnabled = true;
+            cmbEditorial.Location = new Point(512, 114);
+            cmbEditorial.Name = "cmbEditorial";
+            cmbEditorial.Size = new Size(307, 23);
+            cmbEditorial.TabIndex = 10;
             // 
-            // comboBox1
+            // cmbAutor
             // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(512, 77);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(307, 23);
-            comboBox1.TabIndex = 9;
+            cmbAutor.FormattingEnabled = true;
+            cmbAutor.Location = new Point(512, 77);
+            cmbAutor.Name = "cmbAutor";
+            cmbAutor.Size = new Size(307, 23);
+            cmbAutor.TabIndex = 9;
             // 
             // txtTitulo
             // 
@@ -265,7 +266,7 @@
             pblBotones.Controls.Add(btnEditar);
             pblBotones.Controls.Add(btnGuardar);
             pblBotones.Controls.Add(btnNuevo);
-            pblBotones.Location = new Point(316, 433);
+            pblBotones.Location = new Point(280, 432);
             pblBotones.Name = "pblBotones";
             pblBotones.Size = new Size(777, 64);
             pblBotones.TabIndex = 3;
@@ -284,6 +285,7 @@
             btnCancelar.Text = "Cancelar";
             btnCancelar.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnCancelar.UseVisualStyleBackColor = true;
+            btnCancelar.Click += btnCancelar_Click;
             // 
             // btnEliminar
             // 
@@ -299,6 +301,7 @@
             btnEliminar.Text = "Eliminar";
             btnEliminar.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnEliminar.UseVisualStyleBackColor = true;
+            btnEliminar.Click += btnEliminar_Click;
             // 
             // btnEditar
             // 
@@ -314,6 +317,7 @@
             btnEditar.Text = "Editar";
             btnEditar.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnEditar.UseVisualStyleBackColor = true;
+            btnEditar.Click += btnEditar_Click;
             // 
             // btnGuardar
             // 
@@ -329,6 +333,7 @@
             btnGuardar.Text = "Guardar";
             btnGuardar.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnGuardar.UseVisualStyleBackColor = true;
+            btnGuardar.Click += btnGuardar_Click;
             // 
             // btnNuevo
             // 
@@ -344,20 +349,22 @@
             btnNuevo.Text = "Nuevo";
             btnNuevo.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnNuevo.UseVisualStyleBackColor = true;
+            btnNuevo.Click += btnNuevo_Click;
             // 
             // dgvLibros
             // 
             dgvLibros.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvLibros.Location = new Point(147, 518);
+            dgvLibros.Location = new Point(280, 518);
             dgvLibros.Name = "dgvLibros";
-            dgvLibros.Size = new Size(1070, 242);
+            dgvLibros.Size = new Size(769, 308);
             dgvLibros.TabIndex = 4;
+            dgvLibros.CellDoubleClick += CargarLibroSeleccionado;
             // 
             // FrmLibros
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1378, 796);
+            ClientSize = new Size(1378, 851);
             Controls.Add(dgvLibros);
             Controls.Add(pblBotones);
             Controls.Add(pnlDatos);
@@ -383,7 +390,7 @@
         private Label lblTitulo;
         private Panel pnlBusqueda;
         private Button btnBuscar;
-        private TextBox txtBuscar;
+        private TextBox txtBuscarISBN;
         private Label lblTitulo2;
         private Panel pnlDatos;
         private Label lblAutor;
@@ -402,8 +409,8 @@
         private DataGridView dgvLibros;
         private TextBox txtISBN;
         private TextBox txtTitulo;
-        private ComboBox comboBox2;
-        private ComboBox comboBox1;
+        private ComboBox cmbEditorial;
+        private ComboBox cmbAutor;
         private TextBox txtExistencias;
         private TextBox txtAnio;
         private TextBox txtCategoria;
