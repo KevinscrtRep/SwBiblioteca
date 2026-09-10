@@ -1,5 +1,24 @@
+# Visual Studio
 .vs/
 bin/
 obj/
+
+# Archivos temporales
 *.user
 *.suo
+*.userosscache
+*.sln.docstates
+
+# Archivos de compilación
+[Bb]in/
+[Oo]bj/
+
+# Archivos de caché
+*.cache
+*.db
+*.db-shm
+*.db-wal
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
