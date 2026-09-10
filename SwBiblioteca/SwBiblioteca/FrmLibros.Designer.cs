@@ -147,21 +147,21 @@
             // 
             // txtExistencias
             // 
-            txtExistencias.Location = new Point(512, 229);
+            txtExistencias.Location = new Point(512, 241);
             txtExistencias.Name = "txtExistencias";
             txtExistencias.Size = new Size(307, 23);
             txtExistencias.TabIndex = 13;
             // 
             // txtAnio
             // 
-            txtAnio.Location = new Point(512, 192);
+            txtAnio.Location = new Point(512, 204);
             txtAnio.Name = "txtAnio";
             txtAnio.Size = new Size(307, 23);
             txtAnio.TabIndex = 12;
             // 
             // txtCategoria
             // 
-            txtCategoria.Location = new Point(512, 153);
+            txtCategoria.Location = new Point(512, 165);
             txtCategoria.Name = "txtCategoria";
             txtCategoria.Size = new Size(307, 23);
             txtCategoria.TabIndex = 11;
@@ -169,7 +169,7 @@
             // cmbEditorial
             // 
             cmbEditorial.FormattingEnabled = true;
-            cmbEditorial.Location = new Point(512, 114);
+            cmbEditorial.Location = new Point(512, 126);
             cmbEditorial.Name = "cmbEditorial";
             cmbEditorial.Size = new Size(307, 23);
             cmbEditorial.TabIndex = 10;
@@ -177,21 +177,21 @@
             // cmbAutor
             // 
             cmbAutor.FormattingEnabled = true;
-            cmbAutor.Location = new Point(512, 77);
+            cmbAutor.Location = new Point(512, 89);
             cmbAutor.Name = "cmbAutor";
             cmbAutor.Size = new Size(307, 23);
             cmbAutor.TabIndex = 9;
             // 
             // txtTitulo
             // 
-            txtTitulo.Location = new Point(512, 42);
+            txtTitulo.Location = new Point(512, 54);
             txtTitulo.Name = "txtTitulo";
             txtTitulo.Size = new Size(307, 23);
             txtTitulo.TabIndex = 8;
             // 
             // txtISBN
             // 
-            txtISBN.Location = new Point(512, 7);
+            txtISBN.Location = new Point(512, 19);
             txtISBN.Name = "txtISBN";
             txtISBN.Size = new Size(307, 23);
             txtISBN.TabIndex = 7;
@@ -199,7 +199,7 @@
             // lblExistencias
             // 
             lblExistencias.AutoSize = true;
-            lblExistencias.Location = new Point(395, 237);
+            lblExistencias.Location = new Point(395, 249);
             lblExistencias.Name = "lblExistencias";
             lblExistencias.Size = new Size(64, 15);
             lblExistencias.TabIndex = 6;
@@ -208,7 +208,7 @@
             // lblAnio
             // 
             lblAnio.AutoSize = true;
-            lblAnio.Location = new Point(395, 200);
+            lblAnio.Location = new Point(395, 212);
             lblAnio.Name = "lblAnio";
             lblAnio.Size = new Size(29, 15);
             lblAnio.TabIndex = 5;
@@ -217,7 +217,7 @@
             // lblCategoria
             // 
             lblCategoria.AutoSize = true;
-            lblCategoria.Location = new Point(395, 161);
+            lblCategoria.Location = new Point(395, 173);
             lblCategoria.Name = "lblCategoria";
             lblCategoria.Size = new Size(58, 15);
             lblCategoria.TabIndex = 4;
@@ -226,7 +226,7 @@
             // lblEditorial
             // 
             lblEditorial.AutoSize = true;
-            lblEditorial.Location = new Point(395, 122);
+            lblEditorial.Location = new Point(395, 134);
             lblEditorial.Name = "lblEditorial";
             lblEditorial.Size = new Size(50, 15);
             lblEditorial.TabIndex = 3;
@@ -235,7 +235,7 @@
             // lblAutor
             // 
             lblAutor.AutoSize = true;
-            lblAutor.Location = new Point(395, 85);
+            lblAutor.Location = new Point(395, 97);
             lblAutor.Name = "lblAutor";
             lblAutor.Size = new Size(37, 15);
             lblAutor.TabIndex = 2;
@@ -244,7 +244,7 @@
             // lblTitulo3
             // 
             lblTitulo3.AutoSize = true;
-            lblTitulo3.Location = new Point(395, 50);
+            lblTitulo3.Location = new Point(395, 62);
             lblTitulo3.Name = "lblTitulo3";
             lblTitulo3.Size = new Size(37, 15);
             lblTitulo3.TabIndex = 1;
@@ -253,7 +253,7 @@
             // lblISBN
             // 
             lblISBN.AutoSize = true;
-            lblISBN.Location = new Point(395, 15);
+            lblISBN.Location = new Point(395, 27);
             lblISBN.Name = "lblISBN";
             lblISBN.Size = new Size(32, 15);
             lblISBN.TabIndex = 0;
