@@ -77,11 +77,11 @@
             // 
             lblTitulo.AutoSize = true;
             lblTitulo.BackColor = Color.Transparent;
-            lblTitulo.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblTitulo.Font = new Font("Segoe UI", 21.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblTitulo.ForeColor = Color.White;
-            lblTitulo.Location = new Point(547, 9);
+            lblTitulo.Location = new Point(527, 9);
             lblTitulo.Name = "lblTitulo";
-            lblTitulo.Size = new Size(272, 37);
+            lblTitulo.Size = new Size(292, 40);
             lblTitulo.TabIndex = 0;
             lblTitulo.Text = "GESTIÓN DE LIBROS";
             // 
@@ -99,9 +99,10 @@
             // 
             // btnBuscar
             // 
-            btnBuscar.Location = new Point(744, 14);
+            btnBuscar.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            btnBuscar.Location = new Point(797, 17);
             btnBuscar.Name = "btnBuscar";
-            btnBuscar.Size = new Size(75, 23);
+            btnBuscar.Size = new Size(96, 34);
             btnBuscar.TabIndex = 2;
             btnBuscar.Text = "Buscar";
             btnBuscar.UseVisualStyleBackColor = true;
@@ -109,17 +110,18 @@
             // 
             // txtBuscarISBN
             // 
-            txtBuscarISBN.Location = new Point(512, 14);
+            txtBuscarISBN.Location = new Point(512, 22);
             txtBuscarISBN.Name = "txtBuscarISBN";
-            txtBuscarISBN.Size = new Size(206, 23);
+            txtBuscarISBN.Size = new Size(262, 23);
             txtBuscarISBN.TabIndex = 1;
             // 
             // lblTitulo2
             // 
             lblTitulo2.AutoSize = true;
-            lblTitulo2.Location = new Point(455, 17);
+            lblTitulo2.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            lblTitulo2.Location = new Point(433, 24);
             lblTitulo2.Name = "lblTitulo2";
-            lblTitulo2.Size = new Size(32, 15);
+            lblTitulo2.Size = new Size(47, 21);
             lblTitulo2.TabIndex = 0;
             lblTitulo2.Text = "ISBN";
             // 
@@ -199,63 +201,70 @@
             // lblExistencias
             // 
             lblExistencias.AutoSize = true;
-            lblExistencias.Location = new Point(395, 249);
+            lblExistencias.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            lblExistencias.Location = new Point(376, 241);
             lblExistencias.Name = "lblExistencias";
-            lblExistencias.Size = new Size(64, 15);
+            lblExistencias.Size = new Size(94, 21);
             lblExistencias.TabIndex = 6;
             lblExistencias.Text = "Existencias";
             // 
             // lblAnio
             // 
             lblAnio.AutoSize = true;
-            lblAnio.Location = new Point(395, 212);
+            lblAnio.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            lblAnio.Location = new Point(409, 206);
             lblAnio.Name = "lblAnio";
-            lblAnio.Size = new Size(29, 15);
+            lblAnio.Size = new Size(41, 21);
             lblAnio.TabIndex = 5;
             lblAnio.Text = "Año";
             // 
             // lblCategoria
             // 
             lblCategoria.AutoSize = true;
-            lblCategoria.Location = new Point(395, 173);
+            lblCategoria.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            lblCategoria.Location = new Point(386, 167);
             lblCategoria.Name = "lblCategoria";
-            lblCategoria.Size = new Size(58, 15);
+            lblCategoria.Size = new Size(84, 21);
             lblCategoria.TabIndex = 4;
             lblCategoria.Text = "Categoria";
             // 
             // lblEditorial
             // 
             lblEditorial.AutoSize = true;
-            lblEditorial.Location = new Point(395, 134);
+            lblEditorial.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            lblEditorial.Location = new Point(387, 128);
             lblEditorial.Name = "lblEditorial";
-            lblEditorial.Size = new Size(50, 15);
+            lblEditorial.Size = new Size(75, 21);
             lblEditorial.TabIndex = 3;
             lblEditorial.Text = "Editorial";
             // 
             // lblAutor
             // 
             lblAutor.AutoSize = true;
-            lblAutor.Location = new Point(395, 97);
+            lblAutor.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            lblAutor.Location = new Point(397, 91);
             lblAutor.Name = "lblAutor";
-            lblAutor.Size = new Size(37, 15);
+            lblAutor.Size = new Size(53, 21);
             lblAutor.TabIndex = 2;
             lblAutor.Text = "Autor";
             // 
             // lblTitulo3
             // 
             lblTitulo3.AutoSize = true;
-            lblTitulo3.Location = new Point(395, 62);
+            lblTitulo3.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            lblTitulo3.Location = new Point(397, 56);
             lblTitulo3.Name = "lblTitulo3";
-            lblTitulo3.Size = new Size(37, 15);
+            lblTitulo3.Size = new Size(55, 21);
             lblTitulo3.TabIndex = 1;
             lblTitulo3.Text = "Titulo";
             // 
             // lblISBN
             // 
             lblISBN.AutoSize = true;
-            lblISBN.Location = new Point(395, 27);
+            lblISBN.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            lblISBN.Location = new Point(395, 21);
             lblISBN.Name = "lblISBN";
-            lblISBN.Size = new Size(32, 15);
+            lblISBN.Size = new Size(47, 21);
             lblISBN.TabIndex = 0;
             lblISBN.Text = "ISBN";
             // 
@@ -266,7 +275,7 @@
             pblBotones.Controls.Add(btnEditar);
             pblBotones.Controls.Add(btnGuardar);
             pblBotones.Controls.Add(btnNuevo);
-            pblBotones.Location = new Point(280, 432);
+            pblBotones.Location = new Point(280, 431);
             pblBotones.Name = "pblBotones";
             pblBotones.Size = new Size(777, 64);
             pblBotones.TabIndex = 3;
@@ -274,13 +283,14 @@
             // btnCancelar
             // 
             btnCancelar.FlatStyle = FlatStyle.Flat;
+            btnCancelar.Font = new Font("Segoe UI", 12F);
             btnCancelar.IconChar = FontAwesome.Sharp.IconChar.Cancel;
             btnCancelar.IconColor = Color.Black;
             btnCancelar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             btnCancelar.IconSize = 30;
-            btnCancelar.Location = new Point(614, 9);
+            btnCancelar.Location = new Point(596, 11);
             btnCancelar.Name = "btnCancelar";
-            btnCancelar.Size = new Size(123, 44);
+            btnCancelar.Size = new Size(130, 42);
             btnCancelar.TabIndex = 4;
             btnCancelar.Text = "Cancelar";
             btnCancelar.TextImageRelation = TextImageRelation.ImageBeforeText;
@@ -290,13 +300,14 @@
             // btnEliminar
             // 
             btnEliminar.FlatStyle = FlatStyle.Flat;
+            btnEliminar.Font = new Font("Segoe UI", 12F);
             btnEliminar.IconChar = FontAwesome.Sharp.IconChar.TrashAlt;
             btnEliminar.IconColor = Color.Black;
             btnEliminar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             btnEliminar.IconSize = 30;
-            btnEliminar.Location = new Point(475, 9);
+            btnEliminar.Location = new Point(460, 11);
             btnEliminar.Name = "btnEliminar";
-            btnEliminar.Size = new Size(123, 44);
+            btnEliminar.Size = new Size(130, 42);
             btnEliminar.TabIndex = 3;
             btnEliminar.Text = "Eliminar";
             btnEliminar.TextImageRelation = TextImageRelation.ImageBeforeText;
@@ -306,13 +317,14 @@
             // btnEditar
             // 
             btnEditar.FlatStyle = FlatStyle.Flat;
+            btnEditar.Font = new Font("Segoe UI", 12F);
             btnEditar.IconChar = FontAwesome.Sharp.IconChar.Edit;
             btnEditar.IconColor = Color.Black;
             btnEditar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             btnEditar.IconSize = 30;
-            btnEditar.Location = new Point(338, 9);
+            btnEditar.Location = new Point(324, 11);
             btnEditar.Name = "btnEditar";
-            btnEditar.Size = new Size(123, 44);
+            btnEditar.Size = new Size(130, 42);
             btnEditar.TabIndex = 2;
             btnEditar.Text = "Editar";
             btnEditar.TextImageRelation = TextImageRelation.ImageBeforeText;
@@ -322,13 +334,14 @@
             // btnGuardar
             // 
             btnGuardar.FlatStyle = FlatStyle.Flat;
+            btnGuardar.Font = new Font("Segoe UI", 12F);
             btnGuardar.IconChar = FontAwesome.Sharp.IconChar.Save;
             btnGuardar.IconColor = Color.Black;
             btnGuardar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             btnGuardar.IconSize = 30;
-            btnGuardar.Location = new Point(199, 9);
+            btnGuardar.Location = new Point(188, 11);
             btnGuardar.Name = "btnGuardar";
-            btnGuardar.Size = new Size(123, 44);
+            btnGuardar.Size = new Size(130, 42);
             btnGuardar.TabIndex = 1;
             btnGuardar.Text = "Guardar";
             btnGuardar.TextImageRelation = TextImageRelation.ImageBeforeText;
@@ -338,13 +351,14 @@
             // btnNuevo
             // 
             btnNuevo.FlatStyle = FlatStyle.Flat;
+            btnNuevo.Font = new Font("Segoe UI", 12F);
             btnNuevo.IconChar = FontAwesome.Sharp.IconChar.PlusSquare;
             btnNuevo.IconColor = Color.Black;
             btnNuevo.IconFont = FontAwesome.Sharp.IconFont.Auto;
             btnNuevo.IconSize = 30;
-            btnNuevo.Location = new Point(59, 9);
+            btnNuevo.Location = new Point(52, 11);
             btnNuevo.Name = "btnNuevo";
-            btnNuevo.Size = new Size(123, 44);
+            btnNuevo.Size = new Size(130, 42);
             btnNuevo.TabIndex = 0;
             btnNuevo.Text = "Nuevo";
             btnNuevo.TextImageRelation = TextImageRelation.ImageBeforeText;
