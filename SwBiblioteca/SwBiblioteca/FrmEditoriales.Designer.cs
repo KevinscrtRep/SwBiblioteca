@@ -176,10 +176,11 @@
             // 
             // txtNombre
             // 
+            txtNombre.Font = new Font("Segoe UI", 11F);
             txtNombre.Location = new Point(539, 88);
             txtNombre.MaxLength = 100;
             txtNombre.Name = "txtNombre";
-            txtNombre.Size = new Size(311, 23);
+            txtNombre.Size = new Size(311, 27);
             txtNombre.TabIndex = 2;
             // 
             // lblNombre

@@ -64,7 +64,7 @@
             lblTitulo.BackColor = Color.Transparent;
             lblTitulo.Font = new Font("Segoe UI", 21.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblTitulo.ForeColor = Color.White;
-            lblTitulo.Location = new Point(496, 9);
+            lblTitulo.Location = new Point(546, 9);
             lblTitulo.Name = "lblTitulo";
             lblTitulo.Size = new Size(321, 40);
             lblTitulo.TabIndex = 1;
@@ -85,7 +85,7 @@
             pnlDatos.Dock = DockStyle.Top;
             pnlDatos.Location = new Point(0, 70);
             pnlDatos.Name = "pnlDatos";
-            pnlDatos.Size = new Size(1350, 301);
+            pnlDatos.Size = new Size(1350, 276);
             pnlDatos.TabIndex = 1;
             // 
             // btnCancelar
@@ -97,7 +97,7 @@
             btnCancelar.IconColor = Color.Black;
             btnCancelar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             btnCancelar.IconSize = 30;
-            btnCancelar.Location = new Point(866, 236);
+            btnCancelar.Location = new Point(924, 194);
             btnCancelar.Name = "btnCancelar";
             btnCancelar.Size = new Size(130, 42);
             btnCancelar.TabIndex = 8;
@@ -115,7 +115,7 @@
             btnEliminar.IconColor = Color.Black;
             btnEliminar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             btnEliminar.IconSize = 30;
-            btnEliminar.Location = new Point(720, 236);
+            btnEliminar.Location = new Point(778, 194);
             btnEliminar.Name = "btnEliminar";
             btnEliminar.Size = new Size(130, 42);
             btnEliminar.TabIndex = 7;
@@ -133,7 +133,7 @@
             btnEditar.IconColor = Color.Black;
             btnEditar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             btnEditar.IconSize = 30;
-            btnEditar.Location = new Point(575, 236);
+            btnEditar.Location = new Point(633, 194);
             btnEditar.Name = "btnEditar";
             btnEditar.Size = new Size(130, 42);
             btnEditar.TabIndex = 6;
@@ -151,7 +151,7 @@
             btnGuardar.IconColor = Color.Black;
             btnGuardar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             btnGuardar.IconSize = 30;
-            btnGuardar.Location = new Point(430, 236);
+            btnGuardar.Location = new Point(488, 194);
             btnGuardar.Name = "btnGuardar";
             btnGuardar.Size = new Size(130, 42);
             btnGuardar.TabIndex = 5;
@@ -169,7 +169,7 @@
             btnNuevo.IconColor = Color.Black;
             btnNuevo.IconFont = FontAwesome.Sharp.IconFont.Auto;
             btnNuevo.IconSize = 30;
-            btnNuevo.Location = new Point(284, 236);
+            btnNuevo.Location = new Point(342, 194);
             btnNuevo.Name = "btnNuevo";
             btnNuevo.Size = new Size(130, 42);
             btnNuevo.TabIndex = 4;
@@ -180,25 +180,27 @@
             // 
             // txtApellido
             // 
-            txtApellido.Location = new Point(485, 145);
+            txtApellido.Font = new Font("Segoe UI", 11F);
+            txtApellido.Location = new Point(572, 107);
             txtApellido.MaxLength = 100;
             txtApellido.Name = "txtApellido";
-            txtApellido.Size = new Size(311, 23);
+            txtApellido.Size = new Size(311, 27);
             txtApellido.TabIndex = 3;
             // 
             // txtNombre
             // 
-            txtNombre.Location = new Point(485, 54);
+            txtNombre.Font = new Font("Segoe UI", 11F);
+            txtNombre.Location = new Point(572, 39);
             txtNombre.MaxLength = 100;
             txtNombre.Name = "txtNombre";
-            txtNombre.Size = new Size(311, 23);
+            txtNombre.Size = new Size(311, 27);
             txtNombre.TabIndex = 2;
             // 
             // lblApellido
             // 
             lblApellido.AutoSize = true;
             lblApellido.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblApellido.Location = new Point(357, 143);
+            lblApellido.Location = new Point(444, 105);
             lblApellido.Name = "lblApellido";
             lblApellido.Size = new Size(91, 25);
             lblApellido.TabIndex = 1;
@@ -208,7 +210,7 @@
             // 
             lblNombre.AutoSize = true;
             lblNombre.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblNombre.Location = new Point(357, 52);
+            lblNombre.Location = new Point(444, 37);
             lblNombre.Name = "lblNombre";
             lblNombre.Size = new Size(91, 25);
             lblNombre.TabIndex = 0;
@@ -219,9 +221,9 @@
             pnlLista.BackColor = Color.White;
             pnlLista.Controls.Add(dgvAutores);
             pnlLista.Dock = DockStyle.Fill;
-            pnlLista.Location = new Point(0, 371);
+            pnlLista.Location = new Point(0, 346);
             pnlLista.Name = "pnlLista";
-            pnlLista.Size = new Size(1350, 596);
+            pnlLista.Size = new Size(1350, 621);
             pnlLista.TabIndex = 2;
             // 
             // dgvAutores
@@ -235,7 +237,7 @@
             dgvAutores.Name = "dgvAutores";
             dgvAutores.ReadOnly = true;
             dgvAutores.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dgvAutores.Size = new Size(1350, 596);
+            dgvAutores.Size = new Size(1350, 621);
             dgvAutores.TabIndex = 0;
             dgvAutores.CellDoubleClick += dgvAutores_CellDoubleClick;
             // 

@@ -45,9 +45,11 @@
             pnlSuperior = new Panel();
             pnlEstado = new Panel();
             pnlContenido = new Panel();
+            label1 = new Label();
             pnlMenu.SuspendLayout();
             pnlLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            pnlSuperior.SuspendLayout();
             SuspendLayout();
             // 
             // pnlMenu
@@ -65,7 +67,7 @@
             pnlMenu.Dock = DockStyle.Left;
             pnlMenu.Location = new Point(0, 0);
             pnlMenu.Name = "pnlMenu";
-            pnlMenu.Size = new Size(293, 582);
+            pnlMenu.Size = new Size(293, 967);
             pnlMenu.TabIndex = 0;
             // 
             // btnSalida
@@ -284,20 +286,21 @@
             // 
             // pnlSuperior
             // 
-            pnlSuperior.BackColor = Color.LightBlue;
+            pnlSuperior.BackColor = Color.RoyalBlue;
+            pnlSuperior.Controls.Add(label1);
             pnlSuperior.Dock = DockStyle.Top;
             pnlSuperior.Location = new Point(293, 0);
             pnlSuperior.Name = "pnlSuperior";
-            pnlSuperior.Size = new Size(783, 90);
+            pnlSuperior.Size = new Size(1057, 90);
             pnlSuperior.TabIndex = 1;
             // 
             // pnlEstado
             // 
             pnlEstado.BackColor = Color.Silver;
             pnlEstado.Dock = DockStyle.Bottom;
-            pnlEstado.Location = new Point(293, 532);
+            pnlEstado.Location = new Point(293, 917);
             pnlEstado.Name = "pnlEstado";
-            pnlEstado.Size = new Size(783, 50);
+            pnlEstado.Size = new Size(1057, 50);
             pnlEstado.TabIndex = 2;
             // 
             // pnlContenido
@@ -306,14 +309,26 @@
             pnlContenido.Dock = DockStyle.Fill;
             pnlContenido.Location = new Point(293, 90);
             pnlContenido.Name = "pnlContenido";
-            pnlContenido.Size = new Size(783, 442);
+            pnlContenido.Size = new Size(1057, 827);
             pnlContenido.TabIndex = 3;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.BackColor = Color.Transparent;
+            label1.Font = new Font("Segoe UI", 21.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.ForeColor = Color.White;
+            label1.Location = new Point(414, 23);
+            label1.Name = "label1";
+            label1.Size = new Size(269, 40);
+            label1.TabIndex = 2;
+            label1.Text = "¡Hola, bienvenido!";
             // 
             // FrmPrincipal
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1076, 582);
+            ClientSize = new Size(1350, 967);
             Controls.Add(pnlContenido);
             Controls.Add(pnlEstado);
             Controls.Add(pnlSuperior);
@@ -326,6 +341,8 @@
             pnlLogo.ResumeLayout(false);
             pnlLogo.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            pnlSuperior.ResumeLayout(false);
+            pnlSuperior.PerformLayout();
             ResumeLayout(false);
         }
 
@@ -348,5 +365,6 @@
         private FontAwesome.Sharp.IconButton btnPrestamos;
         private FontAwesome.Sharp.IconButton btnReportes;
         private FontAwesome.Sharp.IconButton btnSalida;
+        private Label label1;
     }
 }
