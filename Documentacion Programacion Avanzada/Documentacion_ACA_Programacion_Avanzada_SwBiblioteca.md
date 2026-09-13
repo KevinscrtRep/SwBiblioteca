@@ -23,7 +23,7 @@ Kevin Santiago Sepúlveda Cortes
 Verónica Castro Munar
 
 **Fecha:**\
-9 de Septiembre de 2026
+12 de Septiembre de 2026
 
 ------------------------------------------------------------------------
 
@@ -207,7 +207,7 @@ El sistema es utilizado por el Bibliotecario o Administrador, quien es la única
 
 ## 5.2 Diagrama de casos de uso
 
-![Diagrama de casos de uso](SwBiblioteca\Diagramas Biblioteca/Diagrama De Casos De Uso - Biblioteca.png)
+![Diagrama de casos de uso](/Diagramas%20Biblioteca/Diagrama%20De%20Casos%20De%20Uso%20-%20Biblioteca%20.png)
 
 
 > **Nota:** el diagrama incluye los casos de uso **Gestionar Categorías**, **Gestionar Devoluciones** y **Realizar Consultas**, sin embargo, estos no se llegaron a implementar en la versión final del sistema. Las categorías se manejan como un simple campo dentro del libro y no como un módulo aparte, las devoluciones se controlan actualizando el estado del préstamo ya existente, y las consultas del diagrama tampoco se desarrollaron como tal. En cambio, sí se agregó el módulo de **Reportes**, que no aparece reflejado en el diagrama.
@@ -302,7 +302,7 @@ El sistema está compuesto principalmente por los formularios encargados de cada
 
 Insertar aquí el diagrama de clases.
 
-![Diagrama de clases](SwBiblioteca\Diagramas Biblioteca/Diagrama De Clases - Biblioteca.png)
+![Diagrama de clases](/Diagramas%20Biblioteca/Diagrama%20De%20Clases%20-%20Biblioteca.png)
 
 > **Nota:** el diagrama anterior corresponde al modelo propuesto en la guía, con clases de entidad (`Libro`, `Autor`, `Usuario`, `Prestamo`, `DetallePrestamo`,`Categoria`, `Devolucion`). En la implementación real del proyecto no se crearon clases de modelo para cada entidad; los> datos se consultan y manipulan directamente dentro de cada formulario, usando `DataTable` y `SqlDataReader`. La única clase propia del proyecto es `Conexion`, encargada de la conexión a la base de datos.
 
@@ -371,7 +371,7 @@ La base de datos `Biblioteca` está compuesta por cinco tablas: `Autores`, `Edit
 
 ## 7.2 Diagrama entidad-relación
 
-![Modelo entidad-relación](SwBiblioteca\Diagramas Biblioteca/Diagrama De Casos De Uso - Biblioteca.png)
+![Modelo entidad-relación](/Diagramas%20Biblioteca/Diagrama%20Entidad-Relación.png)
 
 ## 7.3 Relaciones principales
 
@@ -388,7 +388,9 @@ La base de datos `Biblioteca` está compuesta por cinco tablas: `Autores`, `Edit
 
 ## Diccionario de Datos
 
-![Diagrama de casos de uso](SwBiblioteca\Diagramas Biblioteca/Diccionario De Datos - Biblioteca.png)
+![Diccionario de datos](/Diagramas%20Biblioteca/Diccionario%20De%20Datos%20-%20Biblioteca%20.png)
+
+> **Nota:** el diccionario de datos propuesto en la guía incluye las tablas `Categoria`, `DetallePrestamo` y `Devolución`. En la implementación real del proyecto estas tablas no existen: la categoría se maneja como un simple campo de texto dentro de `Libros`, y las devoluciones se controlan actualizando directamente el campo `Estado` de la tabla `Prestamos`, sin una tabla de detalle intermedia. Por esta razón, el diccionario de datos de esta sección refleja únicamente las cinco tablas realmente implementadas: `Autores`, `Editoriales`, `Libros`, `Usuarios` y `Prestamos`.
 
 ## 8.1 Convenciones
 
@@ -468,7 +470,7 @@ La arquitectura está compuesta por:
 
 ## 9.2 Diagrama de arquitectura
 
-![Diagrama de casos de uso](SwBiblioteca/Diagramas Biblioteca/Arquitectura Del Sistema - Biblioteca.png)
+![Diagrama de arquitectura del sistema](/Diagramas%20Biblioteca/Arquitectura%20Del%20Sistema%20%20-%20Biblioteca%20.png)
 
 ## 9.3 Capa de Presentación
 
@@ -642,7 +644,7 @@ y `TextBox`), los botones de operación (`btnNuevo`, `btnGuardar`,
 - El campo Nombre debe estar completo antes de guardar o editar una
   editorial.
 
-  ## 10.5 Módulo de préstamos
+## 10.5 Módulo de préstamos
 
 **Objetivo:** Permitir el registro y control de los préstamos de libros
 realizados a los usuarios, manteniendo actualizada la disponibilidad de
@@ -791,7 +793,7 @@ de error correspondiente, sin permitir que se duplicara el registro.
 
 **Prueba CP03 — Registrar usuario con datos válidos**
 
-![Evidencia CP03](/Capturas%20evidencias/Prueba%20CP03%20-%20Registrar%20usuario%20con%20datos%20válidos.png
+![Evidencia CP03](/Capturas%20evidencias/Prueba%20CP03%20-%20Registrar%20usuario%20con%20datos%20válidos.png)
 
 **Resultado:** El usuario se registró correctamente en la base de datos y apareció de inmediato en el `DataGridView`.
 
@@ -852,25 +854,23 @@ Por último, considero que valdría la pena hacer copias de seguridad periódica
 
 ## Anexo A. Repositorio GitHub
 
-**Repositorio:** [Repositorio](https://github.com/KevinscrtRep/SwBiblioteca.git)
+**Repositorio:** Para ingresar al repositorio dar click en: [Repositorio](https://github.com/KevinscrtRep/SwBiblioteca.git)
 
 ## Anexo B. Script de base de datos
 
-**Archivo:** `[Nombre del archivo .sql]`
+**Archivo:** [Script_Biblioteca](/BaseDatos/Script_Biblioteca.sql)
 
 ## Anexo C. Evidencia de Git y GitHub
 
-Insertar capturas que evidencien:
 
-**Creación del repositorio.**
-
-
-**Commits realizados.**
-
+**Creación del repositorio y Commits realizados.**
+![Repositorio](/Capturas%20evidencias/Commits%20realizados.png)
 
 **Organización del proyecto.**
-
+![Repositorio](/Capturas%20evidencias/Organizacion%20proyecto.png)
 
 **Publicación del código.**
+![Repositorio](/Capturas%20evidencias/Publicacion%20codigo.png)
 
-README.md.
+**README**
+Para ver la documentacion de click en:[README](/Documentacion%20Programacion%20Avanzada/Documentacion_ACA_Programacion_Avanzada_SwBiblioteca.md)
