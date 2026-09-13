@@ -862,8 +862,15 @@ Por último, considero que valdría la pena hacer copias de seguridad periódica
 
 Insertar capturas que evidencien:
 
--   Creación del repositorio.
--   Commits realizados.
--   Organización del proyecto.
--   Publicación del código.
--   README.md.
+**Creación del repositorio.**
+
+
+**Commits realizados.**
+
+
+**Organización del proyecto.**
+
+
+**Publicación del código.**
+
+README.md.
