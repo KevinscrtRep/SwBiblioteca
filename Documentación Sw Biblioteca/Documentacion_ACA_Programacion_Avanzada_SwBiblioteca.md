@@ -62,7 +62,7 @@ manejo de excepciones y conexión con SQL Server.
 12. Pruebas de funcionamiento
 13. Conclusiones
 14. Recomendaciones
-15. Referencias bibliográficas
+15. Anexos
 
 ------------------------------------------------------------------------
 
