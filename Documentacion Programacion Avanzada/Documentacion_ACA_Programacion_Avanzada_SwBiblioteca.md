@@ -207,6 +207,8 @@ El sistema es utilizado por el Bibliotecario o Administrador, quien es la única
 
 ## 5.2 Diagrama de casos de uso
 
+![Diagrama de casos de uso](SwBiblioteca\Diagramas Biblioteca/Diagrama De Casos De Uso - Biblioteca.png)
+
 
 > **Nota:** el diagrama incluye los casos de uso **Gestionar Categorías**, **Gestionar Devoluciones** y **Realizar Consultas**, sin embargo, estos no se llegaron a implementar en la versión final del sistema. Las categorías se manejan como un simple campo dentro del libro y no como un módulo aparte, las devoluciones se controlan actualizando el estado del préstamo ya existente, y las consultas del diagrama tampoco se desarrollaron como tal. En cambio, sí se agregó el módulo de **Reportes**, que no aparece reflejado en el diagrama.
 
@@ -300,7 +302,7 @@ El sistema está compuesto principalmente por los formularios encargados de cada
 
 Insertar aquí el diagrama de clases.
 
-`![Diagrama de clases](ruta/al/diagrama-clases.png)`
+![Diagrama de clases](SwBiblioteca\Diagramas Biblioteca/Diagrama De Clases - Biblioteca.png)
 
 > **Nota:** el diagrama anterior corresponde al modelo propuesto en la guía, con clases de entidad (`Libro`, `Autor`, `Usuario`, `Prestamo`, `DetallePrestamo`,`Categoria`, `Devolucion`). En la implementación real del proyecto no se crearon clases de modelo para cada entidad; los> datos se consultan y manipulan directamente dentro de cada formulario, usando `DataTable` y `SqlDataReader`. La única clase propia del proyecto es `Conexion`, encargada de la conexión a la base de datos.
 
@@ -369,9 +371,7 @@ La base de datos `Biblioteca` está compuesta por cinco tablas: `Autores`, `Edit
 
 ## 7.2 Diagrama entidad-relación
 
-Insertar aquí el modelo entidad-relación.
-
-`![Modelo entidad-relación](ruta/al/modelo-entidad-relacion.png)`
+![Modelo entidad-relación](SwBiblioteca\Diagramas Biblioteca/Diagrama De Casos De Uso - Biblioteca.png)
 
 ## 7.3 Relaciones principales
 
@@ -385,6 +385,10 @@ Insertar aquí el modelo entidad-relación.
 ------------------------------------------------------------------------
 
 # 8. DICCIONARIO DE DATOS
+
+## Diccionario de Datos
+
+![Diagrama de casos de uso](SwBiblioteca\Diagramas Biblioteca/Diccionario De Datos - Biblioteca.png)
 
 ## 8.1 Convenciones
 
@@ -464,7 +468,7 @@ La arquitectura está compuesta por:
 
 ## 9.2 Diagrama de arquitectura
 
-![Arquitectura del sistema](ruta/al/diagrama-arquitectura.png)
+![Diagrama de casos de uso](SwBiblioteca/Diagramas Biblioteca/Arquitectura Del Sistema - Biblioteca.png)
 
 ## 9.3 Capa de Presentación
 
@@ -531,11 +535,335 @@ Acceso a Datos (clase Conexion)
 SQL Server
 ```
 
-Las respuestas de la base de datos realizan el recorrido inverso hasta
-llegar nuevamente a la interfaz.
+Las respuestas de la base de datos realizan el recorrido inverso hasta llegar nuevamente a la interfaz.
 
 ------------------------------------------------------------------------
 
 # 10. EXPLICACIÓN DE CADA MÓDULO DESARROLLADO
 
 ## 10.1 Módulo de libros
+
+**Objetivo:** Permitir la administración completa de la información de los libros disponibles en la biblioteca, incluyendo su registro, consulta, edición, eliminación y búsqueda.
+
+**Interfaz:** El formulario `FrmLibros` está compuesto por un panel de búsqueda (`pnlBusqueda`) con un campo para buscar por ISBN; un panel de datos (`pnlDatos`) con los campos del libro (ISBN, título, categoría, año, existencias) junto con los `ComboBox` de autor y editorial; un panel de botones(`pnlBotones`) con las operaciones CRUD; y un `DataGridView` (`dgvLibros`) que lista todos los libros registrados.
+
+**Clases y métodos utilizados:**
+- `Conexion`: clase encargada de establecer la conexión con la base de datos.
+- `CargarLibros()`: consulta y muestra todos los libros en el `DataGridView`.
+- `CargarAutores()` / `CargarEditoriales()`: cargan los `ComboBox` deautor y editorial desde la base de datos.
+- `btnBuscar_Click`: busca un libro por ISBN y muestra sus datos.
+- `btnNuevo_Click`: limpia el formulario para un nuevo registro.
+- `CargarLibroSeleccionado`: carga los datos de un libro al seleccionar una fila del `DataGridView`.
+- `btnGuardar_Click`: valida los datos e inserta un nuevo libro.
+- `btnEditar_Click`: valida los datos y actualiza un libro existente.
+- `btnEliminar_Click`: elimina el libro seleccionado, previa confirmación.
+- `btnCancelar_Click`: limpia el formulario y cancela la edición.
+
+**Funcionalidades:**
+- Registrar, consultar, actualizar, eliminar y buscar libros.
+
+**Validaciones:**
+- Todos los campos deben estar completos antes de guardar o editar un libro.
+- El año y las existencias deben ser valores numéricos enteros.
+
+## 10.2 Módulo de usuarios
+
+**Objetivo:** Permitir la administración de la información de los
+usuarios registrados en el sistema, quienes son las personas que pueden
+solicitar préstamos de libros.
+
+**Interfaz:** El formulario `FrmUsuarios` está compuesto por los campos
+Nombre, Apellido, Documento, Teléfono y Correo (cada uno con su `Label`
+y `TextBox`), los botones de operación (`btnNuevo`, `btnGuardar`,
+`btnEditar`, `btnEliminar`, `btnCancelar`) y un `DataGridView`
+(`dgvUsuarios`) que lista todos los usuarios registrados.
+
+**Clases y métodos utilizados:**
+- `Conexion`: clase encargada de establecer la conexión con la base de datos.
+- `CargarUsuarios()`: consulta y muestra todos los usuarios en el
+  `DataGridView`, y se ejecuta al cargar el formulario (`FrmUsuarios_Load`).
+- `dgvUsuarios_CellDoubleClick`: carga los datos de un usuario al hacer doble clic sobre una fila del `DataGridView`.
+- `btnNuevo_Click`: limpia el formulario para un nuevo registro.
+- `btnGuardar_Click`: valida los datos e inserta un nuevo usuario.
+- `btnEditar_Click`: valida los datos y actualiza el usuario seleccionado, identificado por `IdUsuario`.
+- `btnEliminar_Click`: elimina el usuario seleccionado, previa confirmación.
+- `btnCancelar_Click`: limpia el formulario y quita la selección del `DataGridView`.
+
+**Funcionalidades:**
+- Registrar, consultar, actualizar y eliminar usuarios.
+
+**Validaciones:**
+- Todos los campos (Nombre, Apellido, Documento, Teléfono y Correo)
+  deben estar completos antes de guardar o editar un usuario.
+
+## 10.3 Módulo de autores
+
+**Objetivo:** Permitir la administración de la información de los autores registrados en el sistema, con el fin de asociarlos a los libros correspondientes.
+
+**Interfaz:** El formulario `FrmAutores` está compuesto por los campos Nombre y Apellido (cada uno con su `Label` y `TextBox`), los botones de operación (`btnNuevo`, `btnGuardar`, `btnEditar`, `btnEliminar`, `btnCancelar`) y un `DataGridView` (`dgvAutores`) que lista todos los autores registrados.
+
+**Clases y métodos utilizados:**
+- `Conexion`: clase encargada de establecer la conexión con la base de datos.
+- `CargarAutores()`: consulta y muestra todos los autores en el
+  `DataGridView`, y se ejecuta al cargar el formulario (`FrmAutores_Load_1`).
+- `dgvAutores_CellDoubleClick`: carga los datos de un autor al hacer doble clic sobre una fila del `DataGridView`.
+- `btnNuevo_Click`: limpia el formulario para un nuevo registro.
+- `btnGuardar_Click_1`: valida los datos e inserta un nuevo autor.
+- `btnEditar_Click`: valida los datos y actualiza el autor seleccionado, identificado por `IdAutor`.
+- `btnEliminar_Click`: elimina el autor seleccionado, previa confirmación.
+- `btnCancelar_Click`: limpia el formulario.
+
+**Funcionalidades:**
+- Registrar, consultar, actualizar y eliminar autores.
+
+**Validaciones:**
+- Los campos Nombre y Apellido deben estar completos antes de guardar o editar un autor.
+
+## 10.4 Módulo de editoriales
+
+**Objetivo:** Permitir la administración de la información de las editoriales encargadas de la publicación de los libros registrados en el sistema.
+
+**Interfaz:** El formulario `FrmEditoriales` está compuesto por el campo Nombre (con su `Label` y `TextBox`), los botones de operación (`btnNuevo`, `btnGuardar`, `btnEditar`, `btnEliminar`, `btnCancelar`) y un `DataGridView` (`dgvEditoriales`) que lista todas las editoriales registradas.
+
+**Clases y métodos utilizados:**
+- `Conexion`: clase encargada de establecer la conexión con la base de datos.
+- `CargarEditoriales()`: consulta y muestra todas las editoriales en el `DataGridView`, y se ejecuta al cargar el formulario (`FrmEditoriales_Load`).
+- `dgvEditoriales_CellDoubleClick`: carga los datos de una editorial al hacer doble clic sobre una fila del `DataGridView`.
+- `btnNuevo_Click`: limpia el formulario para un nuevo registro.
+- `btnGuardar_Click`: valida el dato e inserta una nueva editorial.
+- `btnEditar_Click`: valida el dato y actualiza la editorial seleccionada, identificada por `IdEditorial`.
+- `btnEliminar_Click`: elimina la editorial seleccionada, previa confirmación.
+- `btnCancelar_Click`: limpia el formulario.
+
+**Funcionalidades:**
+- Registrar, consultar, actualizar y eliminar editoriales.
+
+**Validaciones:**
+- El campo Nombre debe estar completo antes de guardar o editar una
+  editorial.
+
+  ## 10.5 Módulo de préstamos
+
+**Objetivo:** Permitir el registro y control de los préstamos de libros
+realizados a los usuarios, manteniendo actualizada la disponibilidad de
+cada libro.
+
+**Interfaz:** El formulario `FrmPrestamos` está compuesto por un
+`ComboBox` para seleccionar el usuario (`cmbUsuario`), un `ComboBox`
+para seleccionar el libro (`cmbLibro`), dos `DateTimePicker` para la
+fecha de préstamo (`dtpFechaPrestamo`) y la fecha de devolución
+(`dtpFechaDevolucion`), los botones de operación (`btnNuevo`,
+`btnGuardar`, `btnEditar`, `btnEliminar`, `btnCancelar`) y un
+`DataGridView` (`dgvPrestamos`) que lista todos los préstamos
+registrados.
+
+**Clases y métodos utilizados:**
+- `Conexion`: clase encargada de establecer la conexión con la base de datos.
+- `CargarPrestamos()`: consulta y muestra todos los préstamos en el `DataGridView`.
+- `CargarUsuarios()` / `CargarLibros()`: cargan los `ComboBox` de usuario y libro desde la base de datos.
+- `dgvPrestamos_CellDoubleClick`: carga los datos de un préstamo al hacer doble clic sobre una fila del `DataGridView`.
+- `btnNuevo_Click`: limpia la selección y restablece las fechas al día actual.
+- `btnGuardar_Click`: valida la selección de usuario y libro, verifica que existan existencias disponibles, registra el préstamo y descuenta una existencia del libro.
+- `btnEditar_Click`: registra la **devolución** del préstamo seleccionado (actualiza la fecha de devolución y el estado a "Devuelto"), y aumenta nuevamente la existencia del libro.
+- `btnEliminar_Click`: elimina el préstamo seleccionado; si su estado era "Prestado", también devuelve la existencia al libro.
+- `btnCancelar_Click`: limpia la selección y restablece las fechas.
+
+**Funcionalidades:**
+- Registrar préstamos.
+- Registrar la devolución de un préstamo (a través del botón Editar).
+- Eliminar préstamos.
+
+**Validaciones:**
+- Se debe seleccionar un usuario y un libro antes de guardar un préstamo.
+- No se puede registrar un préstamo si el libro no tiene existencias disponibles.
+- No se puede registrar la devolución de un préstamo que ya fue marcado como "Devuelto".
+- Se debe marcar (`Checked`) la fecha de devolución antes de registrarla.
+
+## 10.6 Módulo de reportes
+
+**Objetivo:** Permitir la generación y consulta de reportes sobre la información almacenada en el sistema, con el fin de apoyar el control y seguimiento de la biblioteca.
+
+**Interfaz:** El formulario `FrmReportes` está compuesto por un `ComboBox` (`cmbTipoReporte`) para seleccionar el tipo de reporte a generar, los botones `btnGenerar` y `btnLimpiar`, y un `DataGridView` (`dgvReportes`) donde se muestra el resultado del reporte seleccionado.
+
+**Clases y métodos utilizados:**
+- `Conexion`: clase encargada de establecer la conexión con la base de datos.
+- `CargarTiposReporte()`: carga las opciones disponibles en el `ComboBox` de tipo de reporte.
+- `btnGenerar_Click`: según el tipo de reporte seleccionado, ejecuta la consulta correspondiente y muestra el resultado en el `DataGridView`.
+- `btnLimpiar_Click`: limpia la selección del `ComboBox` y el contenido del `DataGridView`.
+
+**Reportes disponibles:**
+- **Préstamos activos:** lista los préstamos con estado "Prestado", mostrando el usuario, el libro y la fecha de préstamo.
+- **Préstamos devueltos:** lista los préstamos con estado "Devuelto", mostrando el usuario, el libro, la fecha de préstamo y la fecha de devolución.
+- **Inventario de libros:** lista todos los libros junto con su autor, editorial, categoría, año y existencias disponibles.
+
+**Funcionalidades:**
+- Generar reportes de préstamos activos, préstamos devueltos e inventario de libros.
+- Limpiar el reporte generado.
+
+**Validaciones:**
+- Se debe seleccionar un tipo de reporte antes de generarlo.
+
+------------------------------------------------------------------------
+
+# 11. CAPTURAS DE PANTALLA DEL SISTEMA
+
+A continuacion se incluyen evidencias de las principales funcionalidades que brinda el sistema.
+
+## 11.1 Menú principal
+
+![Menú principal](/Capturas%20de%20pantalla%20del%20sistema/Captura%20menu%20principal.png)
+
+**Descripción:** Pantalla inicial del sistema, desde la cual el usuario puede navegar hacia los módulos de Libros, Usuarios, Autores, Editoriales, Préstamos y Reportes.
+
+## 11.2 Gestión de libros
+
+![Gestión de libros](/Capturas%20de%20pantalla%20del%20sistema/Captura%20gestion%20de%20libros.png)
+
+**Descripción:** Permite registrar, consultar, actualizar, eliminar y buscar libros por ISBN.
+
+## 11.3 Gestión de usuarios
+
+![Gestión de usuarios](/Capturas%20de%20pantalla%20del%20sistema/Captura%20gestion%20de%20usuarios.png)
+
+**Descripción:** Permite registrar, consultar, actualizar y eliminar los usuarios que pueden solicitar préstamos.
+
+## 11.4 Gestión de autores
+
+![Gestión de autores](/Capturas%20de%20pantalla%20del%20sistema/Captura%20gestion%20de%20prestamos.png)
+
+**Descripción:** Permite registrar, consultar, actualizar y eliminar los autores asociados a los libros.
+
+## 11.5 Gestión de editoriales
+
+![Gestión de editoriales](/Capturas%20de%20pantalla%20del%20sistema/Captura%20gestion%20de%20editoriales.png)
+
+**Descripción:** Permite registrar, consultar, actualizar y eliminar las editoriales asociadas a los libros.
+
+## 11.6 Registro de préstamos
+
+![Registro de préstamos](/Capturas%20de%20pantalla%20del%20sistema/Captura%20gestion%20de%20prestamos.png)
+
+**Descripción:** Permite registrar el préstamo de un libro a un usuario, así como tambien registrar su devolución y eliminar préstamos existentes.
+
+## 11.7 Reportes
+
+![Reportes](/Capturas%20de%20pantalla%20del%20sistema/Captura%20gestion%20de%20reportes.png)
+
+**Descripción:** Permite generar reportes de préstamos activos, préstamos devueltos e inventario de libros.
+
+---------------------------------------------
+
+# 12. PRUEBAS DE FUNCIONAMIENTO
+
+## 12.1 Estrategia de pruebas
+
+El funcionamiento del sistema se verificó realizando pruebas manuales
+sobre cada módulo, ingresando tanto datos válidos como datos inválidos
+o incompletos, con el fin de comprobar que las validaciones y las
+reglas de negocio se comportaran de la manera esperada.
+
+## 12.2 Casos de prueba
+
+| ID | Funcionalidad | Entrada / Acción | Resultado esperado | Resultado obtenido | Estado |
+|---|---|---|---|---|---|
+| CP01 | Registrar libro | Datos válidos | Libro registrado correctamente | Libro registrado correctamente | Aprobado |
+| CP02 | Registrar libro | ISBN repetido | Mostrar mensaje de error | Mensaje de error mostrado | Aprobado |
+| CP03 | Registrar usuario | Datos válidos | Usuario registrado correctamente | Usuario registrado correctamente | Aprobado |
+| CP04 | Registrar préstamo | Libro con existencias disponibles | Préstamo registrado y existencias actualizadas | Préstamo registrado y existencias actualizadas | Aprobado |
+| CP05 | Registrar préstamo | Libro sin existencias disponibles | No permitir el registro del préstamo | Préstamo no permitido | Aprobado |
+| CP06 | Registrar devolución | Préstamo activo | Devolución registrada y existencias actualizadas | Devolución registrada y existencias actualizadas | Aprobado |
+| CP07 | Generar reporte | Seleccionar "Inventario de libros" | Mostrar el listado de libros con su información | Listado mostrado correctamente | Aprobado |
+
+**Prueba CP01 — Registrar libro con datos válidos**
+
+![Evidencia CP01](/Capturas%20evidencias/Prueba%20CP01%20-%20Registrar%20libro%20con%20datos%20válidos.png)
+![Evidencia CP01](/Capturas%20evidencias/Prueba%20CP01.1%20-%20Registrar%20libro%20con%20datos%20válidos.png)
+
+**Resultado:** El libro se registró correctamente en la base de datos y
+apareció de inmediato en el `DataGridView`, tal como se esperaba.
+
+**Prueba CP02 — Registrar libro con ISBN repetido**
+
+![Evidencia CP02](/Capturas%20evidencias/Prueba%20CP02%20-%20Registrar%20libro%20con%20ISBN%20repetido.png)
+
+**Resultado:** El sistema detectó el ISBN repetido y mostró el mensaje
+de error correspondiente, sin permitir que se duplicara el registro.
+
+**Prueba CP03 — Registrar usuario con datos válidos**
+
+![Evidencia CP03](/Capturas%20evidencias/Prueba%20CP03%20-%20Registrar%20usuario%20con%20datos%20válidos.png
+
+**Resultado:** El usuario se registró correctamente en la base de datos y apareció de inmediato en el `DataGridView`.
+
+**Prueba CP04 — Registrar préstamo con libro disponible**
+
+![Evidencia CP04](/Capturas%20evidencias/Prueba%20CP04%20-%20Registrar%20préstamo%20con%20libro%20disponible.png)
+
+**Resultado:** El préstamo se registró correctamente y las existencias del libro se descontaron en uno, tal como se esperaba.
+
+**Prueba CP05 — Registrar préstamo sin existencias disponibles**
+
+![Evidencia CP05](/Capturas%20evidencias/Prueba%20CP05%20-%20Registrar%20préstamo%20sin%20existencias%20disponible.png)
+
+**Resultado:** El sistema no permitió registrar el préstamo y mostró el mensaje de advertencia correspondiente.
+
+**Prueba CP06 — Registrar devolución de un préstamo activo**
+
+![Evidencia CP06](/Capturas%20evidencias/Prueba%20CP06%20—%20Registrar%20devolución%20de%20un%20préstamo%20activo.png)
+
+![Evidencia CP06](/Capturas%20evidencias/Prueba%20CP06.1%20-%20Registrar%20devolución%20de%20un%20préstamo%20activo.png)
+
+**Resultado:** La devolución se registró correctamente, actualizando el estado del préstamo a "Devuelto" y aumentando nuevamente las existencias del libro.
+
+**Prueba CP07 — Generar reporte de inventario de libros**
+
+![Evidencia CP07](/Capturas%20evidencias/Prueba%20CP07%20-%20Generar%20reporte%20de%20inventario%20de%20libros.png)
+
+**Resultado:** El sistema mostró correctamente el listado completo de libros con su información asociada (autor, editorial, categoría, año y existencias).
+
+# 13. CONCLUSIONES
+
+**Conclusión 1**
+Con el desarrollo de este proyecto se logró construir un sistema de escritorio funcional para la gestión de una biblioteca, capaz de administrar libros, autores, editoriales, usuarios y préstamos, dando solución al manejo manual de la información que presentaba la
+institución.
+
+**Conclusión 2**
+Durante el desarrollo se aplicaron conceptos de Programación Orientada a Objetos, como el uso de clases, objetos, constructores, métodos, propiedades y encapsulamiento, además del uso de la herencia propia del framework de Windows Forms.
+
+**Conclusión 3**
+El uso de SQL Server como motor de base de datos, junto con la separación de la conexión en una clase independiente (`Conexion`), permitió mantener organizada la comunicación entre la aplicación y la información almacenada, facilitando su mantenimiento.
+
+**Conclusión 4**
+La parte más compleja del desarrollo fue el manejo correcto de la disponibilidad de los libros (existencias), ya que era necesario actualizarla tanto al registrar un préstamo como al registrar su devolución, asegurando que la información se mantuviera siempre consistente.
+
+# 14. RECOMENDACIONES
+
+Como posible mejora a futuro, me gustaría separar el registro de devoluciones del botón "Editar", y en general hacer que el módulo de préstamos sea más fácil de manejar y editar — por ejemplo, permitiendo modificar los datos de un préstamo (usuario, libro, fechas) de forma más clara, y no solo a través de una única acción que además cumple la función de devolución.
+
+En cuanto a seguridad, sería importante agregar un inicio de sesión con roles de usuario (por ejemplo, administrador y bibliotecario), ya que actualmente cualquier persona que abra el programa tiene acceso completo a todas sus funciones.
+
+Para facilitar el mantenimiento del sistema más adelante, sería bueno separar la lógica de negocio y el acceso a datos en clases propias, en lugar de tener las consultas directamente dentro de cada formulario como está actualmente.
+
+Como nuevas funcionalidades, se podría agregar la opción de exportar los reportes a PDF o Excel, y también manejar la categoría como una entidad propia (con su propia tabla), en lugar de un simple campo de texto dentro del libro.
+
+Por último, considero que valdría la pena hacer copias de seguridad periódicas de la base de datos, para evitar la pérdida de información en caso de algún fallo con el equipo donde se ejecuta el sistema.
+
+# ANEXOS
+
+## Anexo A. Repositorio GitHub
+
+**Repositorio:** [Repositorio](https://github.com/KevinscrtRep/SwBiblioteca.git)
+
+## Anexo B. Script de base de datos
+
+**Archivo:** `[Nombre del archivo .sql]`
+
+## Anexo C. Evidencia de Git y GitHub
+
+Insertar capturas que evidencien:
+
+-   Creación del repositorio.
+-   Commits realizados.
+-   Organización del proyecto.
+-   Publicación del código.
+-   README.md.

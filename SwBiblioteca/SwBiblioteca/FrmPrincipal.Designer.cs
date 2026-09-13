@@ -45,11 +45,9 @@
             pnlSuperior = new Panel();
             pnlEstado = new Panel();
             pnlContenido = new Panel();
-            label1 = new Label();
             pnlMenu.SuspendLayout();
             pnlLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            pnlSuperior.SuspendLayout();
             SuspendLayout();
             // 
             // pnlMenu
@@ -286,12 +284,11 @@
             // 
             // pnlSuperior
             // 
-            pnlSuperior.BackColor = Color.RoyalBlue;
-            pnlSuperior.Controls.Add(label1);
+            pnlSuperior.BackColor = Color.LightBlue;
             pnlSuperior.Dock = DockStyle.Top;
             pnlSuperior.Location = new Point(293, 0);
             pnlSuperior.Name = "pnlSuperior";
-            pnlSuperior.Size = new Size(1057, 90);
+            pnlSuperior.Size = new Size(1057, 59);
             pnlSuperior.TabIndex = 1;
             // 
             // pnlEstado
@@ -307,22 +304,10 @@
             // 
             pnlContenido.BackColor = Color.Gainsboro;
             pnlContenido.Dock = DockStyle.Fill;
-            pnlContenido.Location = new Point(293, 90);
+            pnlContenido.Location = new Point(293, 59);
             pnlContenido.Name = "pnlContenido";
-            pnlContenido.Size = new Size(1057, 827);
+            pnlContenido.Size = new Size(1057, 858);
             pnlContenido.TabIndex = 3;
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.BackColor = Color.Transparent;
-            label1.Font = new Font("Segoe UI", 21.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.ForeColor = Color.White;
-            label1.Location = new Point(414, 23);
-            label1.Name = "label1";
-            label1.Size = new Size(269, 40);
-            label1.TabIndex = 2;
-            label1.Text = "¡Hola, bienvenido!";
             // 
             // FrmPrincipal
             // 
@@ -341,8 +326,6 @@
             pnlLogo.ResumeLayout(false);
             pnlLogo.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            pnlSuperior.ResumeLayout(false);
-            pnlSuperior.PerformLayout();
             ResumeLayout(false);
         }
 
@@ -365,6 +348,5 @@
         private FontAwesome.Sharp.IconButton btnPrestamos;
         private FontAwesome.Sharp.IconButton btnReportes;
         private FontAwesome.Sharp.IconButton btnSalida;
-        private Label label1;
     }
 }

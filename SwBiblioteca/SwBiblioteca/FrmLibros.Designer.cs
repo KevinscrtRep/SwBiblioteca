@@ -100,7 +100,7 @@
             // btnBuscar
             // 
             btnBuscar.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            btnBuscar.Location = new Point(836, 17);
+            btnBuscar.Location = new Point(978, 13);
             btnBuscar.Name = "btnBuscar";
             btnBuscar.Size = new Size(96, 34);
             btnBuscar.TabIndex = 2;
@@ -111,7 +111,7 @@
             // txtBuscarISBN
             // 
             txtBuscarISBN.Font = new Font("Segoe UI", 11F);
-            txtBuscarISBN.Location = new Point(512, 22);
+            txtBuscarISBN.Location = new Point(654, 18);
             txtBuscarISBN.Name = "txtBuscarISBN";
             txtBuscarISBN.Size = new Size(307, 27);
             txtBuscarISBN.TabIndex = 1;
@@ -120,7 +120,7 @@
             // 
             lblTitulo2.AutoSize = true;
             lblTitulo2.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold);
-            lblTitulo2.Location = new Point(450, 24);
+            lblTitulo2.Location = new Point(592, 20);
             lblTitulo2.Name = "lblTitulo2";
             lblTitulo2.Size = new Size(56, 25);
             lblTitulo2.TabIndex = 0;
@@ -129,6 +129,7 @@
             // pnlDatos
             // 
             pnlDatos.Controls.Add(txtExistencias);
+            pnlDatos.Controls.Add(pblBotones);
             pnlDatos.Controls.Add(txtAnio);
             pnlDatos.Controls.Add(txtCategoria);
             pnlDatos.Controls.Add(cmbEditorial);
@@ -145,13 +146,13 @@
             pnlDatos.Dock = DockStyle.Top;
             pnlDatos.Location = new Point(0, 127);
             pnlDatos.Name = "pnlDatos";
-            pnlDatos.Size = new Size(1378, 287);
+            pnlDatos.Size = new Size(1378, 395);
             pnlDatos.TabIndex = 2;
             // 
             // txtExistencias
             // 
             txtExistencias.Font = new Font("Segoe UI", 11F);
-            txtExistencias.Location = new Point(512, 241);
+            txtExistencias.Location = new Point(653, 245);
             txtExistencias.Name = "txtExistencias";
             txtExistencias.Size = new Size(307, 27);
             txtExistencias.TabIndex = 13;
@@ -159,7 +160,7 @@
             // txtAnio
             // 
             txtAnio.Font = new Font("Segoe UI", 11F);
-            txtAnio.Location = new Point(512, 204);
+            txtAnio.Location = new Point(653, 208);
             txtAnio.Name = "txtAnio";
             txtAnio.Size = new Size(307, 27);
             txtAnio.TabIndex = 12;
@@ -167,7 +168,7 @@
             // txtCategoria
             // 
             txtCategoria.Font = new Font("Segoe UI", 11F);
-            txtCategoria.Location = new Point(512, 165);
+            txtCategoria.Location = new Point(653, 169);
             txtCategoria.Name = "txtCategoria";
             txtCategoria.Size = new Size(307, 27);
             txtCategoria.TabIndex = 11;
@@ -176,7 +177,7 @@
             // 
             cmbEditorial.Font = new Font("Segoe UI", 11F);
             cmbEditorial.FormattingEnabled = true;
-            cmbEditorial.Location = new Point(512, 126);
+            cmbEditorial.Location = new Point(653, 130);
             cmbEditorial.Name = "cmbEditorial";
             cmbEditorial.Size = new Size(307, 28);
             cmbEditorial.TabIndex = 10;
@@ -185,7 +186,7 @@
             // 
             cmbAutor.Font = new Font("Segoe UI", 11F);
             cmbAutor.FormattingEnabled = true;
-            cmbAutor.Location = new Point(512, 89);
+            cmbAutor.Location = new Point(653, 93);
             cmbAutor.Name = "cmbAutor";
             cmbAutor.Size = new Size(307, 28);
             cmbAutor.TabIndex = 9;
@@ -193,7 +194,7 @@
             // txtTitulo
             // 
             txtTitulo.Font = new Font("Segoe UI", 11F);
-            txtTitulo.Location = new Point(512, 54);
+            txtTitulo.Location = new Point(653, 58);
             txtTitulo.Name = "txtTitulo";
             txtTitulo.Size = new Size(307, 27);
             txtTitulo.TabIndex = 8;
@@ -201,7 +202,7 @@
             // txtISBN
             // 
             txtISBN.Font = new Font("Segoe UI", 11F);
-            txtISBN.Location = new Point(512, 14);
+            txtISBN.Location = new Point(653, 18);
             txtISBN.Name = "txtISBN";
             txtISBN.Size = new Size(307, 27);
             txtISBN.TabIndex = 7;
@@ -210,7 +211,7 @@
             // 
             lblExistencias.AutoSize = true;
             lblExistencias.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold);
-            lblExistencias.Location = new Point(376, 241);
+            lblExistencias.Location = new Point(508, 247);
             lblExistencias.Name = "lblExistencias";
             lblExistencias.Size = new Size(112, 25);
             lblExistencias.TabIndex = 6;
@@ -220,7 +221,7 @@
             // 
             lblAnio.AutoSize = true;
             lblAnio.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold);
-            lblAnio.Location = new Point(409, 206);
+            lblAnio.Location = new Point(566, 210);
             lblAnio.Name = "lblAnio";
             lblAnio.Size = new Size(54, 25);
             lblAnio.TabIndex = 5;
@@ -230,7 +231,7 @@
             // 
             lblCategoria.AutoSize = true;
             lblCategoria.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold);
-            lblCategoria.Location = new Point(386, 167);
+            lblCategoria.Location = new Point(517, 171);
             lblCategoria.Name = "lblCategoria";
             lblCategoria.Size = new Size(103, 25);
             lblCategoria.TabIndex = 4;
@@ -240,7 +241,7 @@
             // 
             lblEditorial.AutoSize = true;
             lblEditorial.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold);
-            lblEditorial.Location = new Point(387, 128);
+            lblEditorial.Location = new Point(529, 133);
             lblEditorial.Name = "lblEditorial";
             lblEditorial.Size = new Size(91, 25);
             lblEditorial.TabIndex = 3;
@@ -250,7 +251,7 @@
             // 
             lblAutor.AutoSize = true;
             lblAutor.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold);
-            lblAutor.Location = new Point(397, 91);
+            lblAutor.Location = new Point(550, 96);
             lblAutor.Name = "lblAutor";
             lblAutor.Size = new Size(70, 25);
             lblAutor.TabIndex = 2;
@@ -260,7 +261,7 @@
             // 
             lblTitulo3.AutoSize = true;
             lblTitulo3.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold);
-            lblTitulo3.Location = new Point(397, 56);
+            lblTitulo3.Location = new Point(551, 60);
             lblTitulo3.Name = "lblTitulo3";
             lblTitulo3.Size = new Size(69, 25);
             lblTitulo3.TabIndex = 1;
@@ -270,7 +271,7 @@
             // 
             lblISBN.AutoSize = true;
             lblISBN.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold);
-            lblISBN.Location = new Point(405, 14);
+            lblISBN.Location = new Point(559, 20);
             lblISBN.Name = "lblISBN";
             lblISBN.Size = new Size(61, 25);
             lblISBN.TabIndex = 0;
@@ -283,7 +284,7 @@
             pblBotones.Controls.Add(btnEditar);
             pblBotones.Controls.Add(btnGuardar);
             pblBotones.Controls.Add(btnNuevo);
-            pblBotones.Location = new Point(280, 431);
+            pblBotones.Location = new Point(425, 297);
             pblBotones.Name = "pblBotones";
             pblBotones.Size = new Size(777, 64);
             pblBotones.TabIndex = 3;
@@ -375,11 +376,12 @@
             // 
             // dgvLibros
             // 
+            dgvLibros.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dgvLibros.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvLibros.Dock = DockStyle.Fill;
-            dgvLibros.Location = new Point(0, 414);
+            dgvLibros.Location = new Point(0, 522);
             dgvLibros.Name = "dgvLibros";
-            dgvLibros.Size = new Size(1378, 437);
+            dgvLibros.Size = new Size(1378, 329);
             dgvLibros.TabIndex = 4;
             dgvLibros.CellDoubleClick += CargarLibroSeleccionado;
             // 
@@ -389,7 +391,6 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1378, 851);
             Controls.Add(dgvLibros);
-            Controls.Add(pblBotones);
             Controls.Add(pnlDatos);
             Controls.Add(pnlBusqueda);
             Controls.Add(pnlTitulo);

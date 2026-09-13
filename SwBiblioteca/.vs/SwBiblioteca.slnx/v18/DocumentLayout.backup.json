@@ -3,36 +3,56 @@
   "WorkspaceRootPath": "C:\\Users\\User\\Documents\\GitHub\\SwBiblioteca\\SwBiblioteca\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7E6D5ED7-99B8-4B2C-4127-8D3E1606C173}|SwBiblioteca\\SwBiblioteca.csproj|c:\\users\\user\\documents\\github\\swbiblioteca\\swbiblioteca\\swbiblioteca\\frmlibros.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{7E6D5ED7-99B8-4B2C-4127-8D3E1606C173}|SwBiblioteca\\SwBiblioteca.csproj|solutionrelative:swbiblioteca\\frmlibros.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{7E6D5ED7-99B8-4B2C-4127-8D3E1606C173}|SwBiblioteca\\SwBiblioteca.csproj|C:\\Users\\User\\Documents\\GitHub\\SwBiblioteca\\SwBiblioteca\\swbiblioteca\\frmautores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7E6D5ED7-99B8-4B2C-4127-8D3E1606C173}|SwBiblioteca\\SwBiblioteca.csproj|solutionrelative:swbiblioteca\\frmautores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7E6D5ED7-99B8-4B2C-4127-8D3E1606C173}|SwBiblioteca\\SwBiblioteca.csproj|c:\\users\\user\\documents\\github\\swbiblioteca\\swbiblioteca\\swbiblioteca\\frmreportes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{7E6D5ED7-99B8-4B2C-4127-8D3E1606C173}|SwBiblioteca\\SwBiblioteca.csproj|solutionrelative:swbiblioteca\\frmreportes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{7E6D5ED7-99B8-4B2C-4127-8D3E1606C173}|SwBiblioteca\\SwBiblioteca.csproj|c:\\users\\user\\documents\\github\\swbiblioteca\\swbiblioteca\\swbiblioteca\\frmautores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E6D5ED7-99B8-4B2C-4127-8D3E1606C173}|SwBiblioteca\\SwBiblioteca.csproj|solutionrelative:swbiblioteca\\frmautores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E6D5ED7-99B8-4B2C-4127-8D3E1606C173}|SwBiblioteca\\SwBiblioteca.csproj|c:\\users\\user\\documents\\github\\swbiblioteca\\swbiblioteca\\swbiblioteca\\frmeditoriales.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E6D5ED7-99B8-4B2C-4127-8D3E1606C173}|SwBiblioteca\\SwBiblioteca.csproj|solutionrelative:swbiblioteca\\frmeditoriales.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E6D5ED7-99B8-4B2C-4127-8D3E1606C173}|SwBiblioteca\\SwBiblioteca.csproj|c:\\users\\user\\documents\\github\\swbiblioteca\\swbiblioteca\\swbiblioteca\\frmprestamos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E6D5ED7-99B8-4B2C-4127-8D3E1606C173}|SwBiblioteca\\SwBiblioteca.csproj|solutionrelative:swbiblioteca\\frmprestamos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7E6D5ED7-99B8-4B2C-4127-8D3E1606C173}|SwBiblioteca\\SwBiblioteca.csproj|c:\\users\\user\\documents\\github\\swbiblioteca\\swbiblioteca\\swbiblioteca\\frmreportes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7E6D5ED7-99B8-4B2C-4127-8D3E1606C173}|SwBiblioteca\\SwBiblioteca.csproj|solutionrelative:swbiblioteca\\frmreportes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7E6D5ED7-99B8-4B2C-4127-8D3E1606C173}|SwBiblioteca\\SwBiblioteca.csproj|c:\\users\\user\\documents\\github\\swbiblioteca\\swbiblioteca\\swbiblioteca\\frmlibros.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7E6D5ED7-99B8-4B2C-4127-8D3E1606C173}|SwBiblioteca\\SwBiblioteca.csproj|solutionrelative:swbiblioteca\\frmlibros.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7E6D5ED7-99B8-4B2C-4127-8D3E1606C173}|SwBiblioteca\\SwBiblioteca.csproj|C:\\Users\\User\\Documents\\GitHub\\SwBiblioteca\\SwBiblioteca\\swbiblioteca\\frmreportes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7E6D5ED7-99B8-4B2C-4127-8D3E1606C173}|SwBiblioteca\\SwBiblioteca.csproj|solutionrelative:swbiblioteca\\frmreportes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7E6D5ED7-99B8-4B2C-4127-8D3E1606C173}|SwBiblioteca\\SwBiblioteca.csproj|c:\\users\\user\\documents\\github\\swbiblioteca\\swbiblioteca\\swbiblioteca\\frmprestamos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{7E6D5ED7-99B8-4B2C-4127-8D3E1606C173}|SwBiblioteca\\SwBiblioteca.csproj|C:\\Users\\User\\Documents\\GitHub\\SwBiblioteca\\SwBiblioteca\\swbiblioteca\\frmprestamos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{7E6D5ED7-99B8-4B2C-4127-8D3E1606C173}|SwBiblioteca\\SwBiblioteca.csproj|solutionrelative:swbiblioteca\\frmprestamos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7E6D5ED7-99B8-4B2C-4127-8D3E1606C173}|SwBiblioteca\\SwBiblioteca.csproj|C:\\Users\\User\\Documents\\GitHub\\SwBiblioteca\\SwBiblioteca\\swbiblioteca\\frmprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{7E6D5ED7-99B8-4B2C-4127-8D3E1606C173}|SwBiblioteca\\SwBiblioteca.csproj|solutionrelative:swbiblioteca\\frmprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7E6D5ED7-99B8-4B2C-4127-8D3E1606C173}|SwBiblioteca\\SwBiblioteca.csproj|c:\\users\\user\\documents\\github\\swbiblioteca\\swbiblioteca\\swbiblioteca\\frmautores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{7E6D5ED7-99B8-4B2C-4127-8D3E1606C173}|SwBiblioteca\\SwBiblioteca.csproj|solutionrelative:swbiblioteca\\frmautores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7E6D5ED7-99B8-4B2C-4127-8D3E1606C173}|SwBiblioteca\\SwBiblioteca.csproj|c:\\users\\user\\documents\\github\\swbiblioteca\\swbiblioteca\\swbiblioteca\\frmeditoriales.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{7E6D5ED7-99B8-4B2C-4127-8D3E1606C173}|SwBiblioteca\\SwBiblioteca.csproj|C:\\Users\\User\\Documents\\GitHub\\SwBiblioteca\\SwBiblioteca\\swbiblioteca\\frmeditoriales.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{7E6D5ED7-99B8-4B2C-4127-8D3E1606C173}|SwBiblioteca\\SwBiblioteca.csproj|solutionrelative:swbiblioteca\\frmeditoriales.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E6D5ED7-99B8-4B2C-4127-8D3E1606C173}|SwBiblioteca\\SwBiblioteca.csproj|C:\\Users\\User\\Documents\\GitHub\\SwBiblioteca\\SwBiblioteca\\swbiblioteca\\frmusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7E6D5ED7-99B8-4B2C-4127-8D3E1606C173}|SwBiblioteca\\SwBiblioteca.csproj|solutionrelative:swbiblioteca\\frmusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E6D5ED7-99B8-4B2C-4127-8D3E1606C173}|SwBiblioteca\\SwBiblioteca.csproj|c:\\users\\user\\documents\\github\\swbiblioteca\\swbiblioteca\\swbiblioteca\\frmusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E6D5ED7-99B8-4B2C-4127-8D3E1606C173}|SwBiblioteca\\SwBiblioteca.csproj|solutionrelative:swbiblioteca\\frmusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E6D5ED7-99B8-4B2C-4127-8D3E1606C173}|SwBiblioteca\\SwBiblioteca.csproj|C:\\Users\\User\\Documents\\GitHub\\SwBiblioteca\\SwBiblioteca\\swbiblioteca\\frmlibros.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7E6D5ED7-99B8-4B2C-4127-8D3E1606C173}|SwBiblioteca\\SwBiblioteca.csproj|solutionrelative:swbiblioteca\\frmlibros.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E6D5ED7-99B8-4B2C-4127-8D3E1606C173}|SwBiblioteca\\SwBiblioteca.csproj|c:\\users\\user\\documents\\github\\swbiblioteca\\swbiblioteca\\swbiblioteca\\frmprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E6D5ED7-99B8-4B2C-4127-8D3E1606C173}|SwBiblioteca\\SwBiblioteca.csproj|solutionrelative:swbiblioteca\\frmprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E6D5ED7-99B8-4B2C-4127-8D3E1606C173}|SwBiblioteca\\SwBiblioteca.csproj|c:\\users\\user\\documents\\github\\swbiblioteca\\swbiblioteca\\swbiblioteca\\frmprincipal.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E6D5ED7-99B8-4B2C-4127-8D3E1606C173}|SwBiblioteca\\SwBiblioteca.csproj|solutionrelative:swbiblioteca\\frmprincipal.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,69 +62,151 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "FrmLibros.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\SwBiblioteca\\SwBiblioteca\\SwBiblioteca\\FrmLibros.cs",
-              "RelativeDocumentMoniker": "SwBiblioteca\\FrmLibros.cs",
-              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\SwBiblioteca\\SwBiblioteca\\SwBiblioteca\\FrmLibros.cs",
-              "RelativeToolTip": "SwBiblioteca\\FrmLibros.cs",
-              "ViewState": "AgIAABsCAAAAAAAAAAAWwCsCAAAAAAAAAAAAAA==",
+              "Title": "FrmPrestamos.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\SwBiblioteca\\SwBiblioteca\\SwBiblioteca\\FrmPrestamos.cs",
+              "RelativeDocumentMoniker": "SwBiblioteca\\FrmPrestamos.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\SwBiblioteca\\SwBiblioteca\\SwBiblioteca\\FrmPrestamos.cs",
+              "RelativeToolTip": "SwBiblioteca\\FrmPrestamos.cs",
+              "ViewState": "AgIAAPQBAAAAAAAAAAAqwAcCAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-11T06:01:13.05Z",
+              "WhenOpened": "2026-09-12T06:19:21.827Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "FrmLibros.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\SwBiblioteca\\SwBiblioteca\\SwBiblioteca\\FrmLibros.cs",
-              "RelativeDocumentMoniker": "SwBiblioteca\\FrmLibros.cs",
-              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\SwBiblioteca\\SwBiblioteca\\SwBiblioteca\\FrmLibros.cs [Dise\u00F1o]",
-              "RelativeToolTip": "SwBiblioteca\\FrmLibros.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-11T06:01:08.838Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "FrmReportes.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\SwBiblioteca\\SwBiblioteca\\SwBiblioteca\\FrmReportes.cs",
-              "RelativeDocumentMoniker": "SwBiblioteca\\FrmReportes.cs",
-              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\SwBiblioteca\\SwBiblioteca\\SwBiblioteca\\FrmReportes.cs",
-              "RelativeToolTip": "SwBiblioteca\\FrmReportes.cs",
-              "ViewState": "AgIAAFUAAAAAAAAAAAD4v4UAAAAJAAAAAAAAAA==",
+              "Title": "FrmEditoriales.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\SwBiblioteca\\SwBiblioteca\\SwBiblioteca\\FrmEditoriales.cs",
+              "RelativeDocumentMoniker": "SwBiblioteca\\FrmEditoriales.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\SwBiblioteca\\SwBiblioteca\\SwBiblioteca\\FrmEditoriales.cs",
+              "RelativeToolTip": "SwBiblioteca\\FrmEditoriales.cs",
+              "ViewState": "AgIAAP4AAAAAAAAAAAAqwBABAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-11T05:42:01.199Z",
+              "WhenOpened": "2026-09-12T06:18:38.702Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "FrmAutores.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\SwBiblioteca\\SwBiblioteca\\SwBiblioteca\\FrmAutores.cs",
+              "RelativeDocumentMoniker": "SwBiblioteca\\FrmAutores.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\SwBiblioteca\\SwBiblioteca\\SwBiblioteca\\FrmAutores.cs",
+              "RelativeToolTip": "SwBiblioteca\\FrmAutores.cs",
+              "ViewState": "AgIAACcBAAAAAAAAAAAAAC0BAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-12T06:17:45.164Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FrmAutores.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\SwBiblioteca\\SwBiblioteca\\SwBiblioteca\\FrmAutores.cs",
+              "RelativeDocumentMoniker": "SwBiblioteca\\FrmAutores.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\SwBiblioteca\\SwBiblioteca\\SwBiblioteca\\FrmAutores.cs [Dise\u00F1o]",
+              "RelativeToolTip": "SwBiblioteca\\FrmAutores.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-12T06:17:33.282Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "FrmUsuarios.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\SwBiblioteca\\SwBiblioteca\\SwBiblioteca\\FrmUsuarios.cs",
+              "RelativeDocumentMoniker": "SwBiblioteca\\FrmUsuarios.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\SwBiblioteca\\SwBiblioteca\\SwBiblioteca\\FrmUsuarios.cs",
+              "RelativeToolTip": "SwBiblioteca\\FrmUsuarios.cs",
+              "ViewState": "AgIAAPoAAAAAAAAAAAAqwCQBAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-12T06:15:49.723Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "FrmUsuarios.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\SwBiblioteca\\SwBiblioteca\\SwBiblioteca\\FrmUsuarios.cs",
+              "RelativeDocumentMoniker": "SwBiblioteca\\FrmUsuarios.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\SwBiblioteca\\SwBiblioteca\\SwBiblioteca\\FrmUsuarios.cs [Dise\u00F1o]",
+              "RelativeToolTip": "SwBiblioteca\\FrmUsuarios.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-12T06:15:27.555Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "FrmReportes.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\SwBiblioteca\\SwBiblioteca\\SwBiblioteca\\FrmReportes.cs",
               "RelativeDocumentMoniker": "SwBiblioteca\\FrmReportes.cs",
               "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\SwBiblioteca\\SwBiblioteca\\SwBiblioteca\\FrmReportes.cs [Dise\u00F1o]",
               "RelativeToolTip": "SwBiblioteca\\FrmReportes.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-11T05:39:47.383Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2026-09-11T05:39:47.383Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "FrmLibros.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\SwBiblioteca\\SwBiblioteca\\SwBiblioteca\\FrmLibros.cs",
+              "RelativeDocumentMoniker": "SwBiblioteca\\FrmLibros.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\SwBiblioteca\\SwBiblioteca\\SwBiblioteca\\FrmLibros.cs [Dise\u00F1o]",
+              "RelativeToolTip": "SwBiblioteca\\FrmLibros.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-11T06:01:08.838Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "FrmReportes.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\SwBiblioteca\\SwBiblioteca\\SwBiblioteca\\FrmReportes.cs",
+              "RelativeDocumentMoniker": "SwBiblioteca\\FrmReportes.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\SwBiblioteca\\SwBiblioteca\\SwBiblioteca\\FrmReportes.cs",
+              "RelativeToolTip": "SwBiblioteca\\FrmReportes.cs",
+              "ViewState": "AgIAAGkAAAAAAAAAAAAkwIcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-11T05:42:01.199Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "FrmPrincipal.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\SwBiblioteca\\SwBiblioteca\\SwBiblioteca\\FrmPrincipal.cs",
+              "RelativeDocumentMoniker": "SwBiblioteca\\FrmPrincipal.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\SwBiblioteca\\SwBiblioteca\\SwBiblioteca\\FrmPrincipal.cs",
+              "RelativeToolTip": "SwBiblioteca\\FrmPrincipal.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-12T05:53:10.429Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "FrmPrestamos.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\SwBiblioteca\\SwBiblioteca\\SwBiblioteca\\FrmPrestamos.cs",
               "RelativeDocumentMoniker": "SwBiblioteca\\FrmPrestamos.cs",
               "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\SwBiblioteca\\SwBiblioteca\\SwBiblioteca\\FrmPrestamos.cs [Dise\u00F1o]",
               "RelativeToolTip": "SwBiblioteca\\FrmPrestamos.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-11T05:05:34.092Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2026-09-11T05:05:34.092Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "FrmPrincipal.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\SwBiblioteca\\SwBiblioteca\\SwBiblioteca\\FrmPrincipal.Designer.cs",
+              "RelativeDocumentMoniker": "SwBiblioteca\\FrmPrincipal.Designer.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\SwBiblioteca\\SwBiblioteca\\SwBiblioteca\\FrmPrincipal.Designer.cs",
+              "RelativeToolTip": "SwBiblioteca\\FrmPrincipal.Designer.cs",
+              "ViewState": "AgIAACoBAAAAAAAAAAAgwEgBAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-12T05:56:15.077Z"
             },
             {
               "$type": "Document",
@@ -115,32 +217,7 @@
               "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\SwBiblioteca\\SwBiblioteca\\SwBiblioteca\\FrmEditoriales.cs [Dise\u00F1o]",
               "RelativeToolTip": "SwBiblioteca\\FrmEditoriales.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-11T03:36:24.064Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "FrmAutores.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\SwBiblioteca\\SwBiblioteca\\SwBiblioteca\\FrmAutores.cs",
-              "RelativeDocumentMoniker": "SwBiblioteca\\FrmAutores.cs",
-              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\SwBiblioteca\\SwBiblioteca\\SwBiblioteca\\FrmAutores.cs [Dise\u00F1o]",
-              "RelativeToolTip": "SwBiblioteca\\FrmAutores.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-11T02:50:02.013Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "FrmPrincipal.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\SwBiblioteca\\SwBiblioteca\\SwBiblioteca\\FrmPrincipal.cs",
-              "RelativeDocumentMoniker": "SwBiblioteca\\FrmPrincipal.cs",
-              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\SwBiblioteca\\SwBiblioteca\\SwBiblioteca\\FrmPrincipal.cs [Dise\u00F1o]",
-              "RelativeToolTip": "SwBiblioteca\\FrmPrincipal.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-26T05:55:24.909Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2026-09-11T03:36:24.064Z"
             }
           ]
         }
